@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-postit-yellow: #ffd700;
+  --color-postit-yellow-ink: #5a3d00;
+  --color-postit-blue: #00bfff;
+  --color-postit-blue-ink: #001a4d;
+  --color-postit-pink: #ff69b4;
+  --color-postit-pink-ink: #4a0028;
+  --color-postit-green: #00ff00;
+  --color-postit-green-ink: #001a00;
+  --color-surface-soft: #fafafa;
+  --animate-scroll-infinite: scroll-infinite 40s linear infinite;
+}
+
+@keyframes scroll-infinite {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
