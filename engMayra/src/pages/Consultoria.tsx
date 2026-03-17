@@ -21,19 +21,21 @@ const Consultoria = () => {
   const pacotes = [
     {
       title: "Consultoria Mensal Fixo",
-
       description:
         "Acompanhamento constante com dia a definir. Ideal para garantir que o planejamento saia do papel e a produtividade se mantenha alta ao longo de toda a obra.",
       image: imgBG1,
       icon: <Calendar size={24} />,
+      price: "Sob Consulta", // Adicionado para corrigir o erro
+      period: "/mensal", // Adicionado para corrigir o erro
     },
     {
       title: "Consultoria por Etapa/Fase",
-
       description:
         "Foco total em fases críticas, conforme a necessidade e o cronograma da obra. Ideal para quem precisa de um 'choque de gestão' em uma etapa específica.",
       image: imgBG2,
       icon: <Zap size={24} />,
+      price: "Sob Consulta", // Adicionado para corrigir o erro
+      period: "/fase", // Adicionado para corrigir o erro
     },
   ];
 
@@ -313,7 +315,7 @@ const Consultoria = () => {
           Pronto para ter previsibilidade e produtividade?
         </h3>
         <a
-          href="https://wa.me/SEUNUMERO"
+          href="https://wa.me/35997382410"
           target="_blank"
           rel="noreferrer"
           className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-pink-600 to-orange-500 text-white px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:scale-105 transition-transform shadow-[0_0_30px_rgba(236,72,153,0.3)]"
