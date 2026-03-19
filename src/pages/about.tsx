@@ -378,9 +378,14 @@ const AboutSection = () => {
             </p>
             <p className="text-gray-600 text-base">
               WhatsApp:{" "}
-              <span className="font-semibold text-gray-900">
+              <a
+                href="https://wa.me/554796212925"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-gray-900 hover:text-green-600 transition-colors"
+              >
                 +55 47 99621-2925
-              </span>
+              </a>
             </p>
           </div>
 
@@ -395,6 +400,16 @@ const AboutSection = () => {
             </Link>
           </div>
         </div>
+        <footer className="w-full flex justify-center mt-8">
+          <a
+            href="https://www.genevieve.com.br/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-gray-600 text-[10px] tracking-widest hover:text-gray-400 transition-colors"
+          >
+            Desenvolvido por Genevieve Website Constructions
+          </a>
+        </footer>
       </section>
     </div>
   );

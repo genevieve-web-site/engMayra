@@ -112,19 +112,25 @@ const LinkTree = () => {
       {/* Redes Sociais - Menores e com margem reduzida */}
       <div className="flex gap-8 mt-10">
         <a
-          href="#"
+          href="https://www.instagram.com/eng.mayranns/"
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-gray-400 hover:text-pink-500 transition-colors"
         >
           <Instagram size={20} />
         </a>
         <a
-          href="#"
+          href="https://www.linkedin.com/in/mayraalvesnunes/"
           className="text-gray-400 hover:text-blue-500 transition-colors"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <Linkedin size={20} />
         </a>
         <a
-          href="#"
+          href="https://wa.me/554796212925"
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-gray-400 hover:text-green-500 transition-colors"
         >
           <MessageCircle size={20} />
@@ -132,7 +138,7 @@ const LinkTree = () => {
       </div>
 
       <p className="text-gray-600 text-[10px] mt-10 uppercase tracking-widest">
-        © 2026 Mayra Alves
+        © 2026 Engenheira Mayra Nunes. Todos os direitos reservados.
       </p>
       <a
         href="https://www.genevieve.com.br/"
