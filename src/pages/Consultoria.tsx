@@ -129,7 +129,7 @@ const Consultoria = () => {
                   <div className="flex items-center gap-2 mt-auto">
                     <img
                       src={perfil}
-                      className="w-6 h-6 rounded-full object-cover grayscale opacity-70"
+                      className="w-6 h-6 rounded-full object-cover  opacity-70"
                     />
                     <span className="text-[10px] text-gray-500 font-medium uppercase tracking-tighter">
                       Mayra Nunes
@@ -186,7 +186,7 @@ const Consultoria = () => {
               <div className="w-full md:w-[35%] h-48 rounded-2xl overflow-hidden border border-white/10">
                 <img
                   src={imgBG3}
-                  className="w-full h-full object-cover grayscale opacity-60"
+                  className="w-full h-full object-cover  opacity-60"
                 />
               </div>
             </div>

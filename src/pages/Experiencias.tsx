@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowLeft, ArrowRight, Star } from "lucide-react";
+import { ArrowLeft, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import imageProject1 from "../assets/consultoria/1.jpeg";
 import imageProject2 from "../assets/consultoria/2.jpeg";
@@ -34,9 +34,7 @@ const Experiencias = () => {
     },
   ]);
 
-  const avancarImagem = () => {
-    setImagensObras((prev) => [...prev.slice(1), prev[0]]);
-  };
+  // ...função avancarImagem removida...
 
   // Substituí os textos por imagens de fundo para os cards
   const obrasCards = [
@@ -115,16 +113,7 @@ const Experiencias = () => {
               {/* Gradientes laterais para suavizar a entrada/saída das fotos */}
               <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-[#06000c] to-transparent z-10"></div>
               <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-[#0b0b0b] to-transparent z-10"></div>
-
-              <button
-                type="button"
-                onClick={avancarImagem}
-                className="absolute right-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full border border-white/30 bg-black/40 text-white hover:bg-black/70 transition-colors flex items-center justify-center"
-                aria-label="Avançar imagens"
-              >
-                <ArrowRight size={18} />
-              </button>
-
+              // ...seta removida...
               <div className="flex w-[200%] animate-scroll-infinite gap-4">
                 {/* Array de imagens (Repetido duas vezes para o efeito infinito) */}
                 {[...Array(2)].map((_, i) => (
