@@ -15,7 +15,7 @@ import imageCarousel4 from "../assets/consultoria/atendimento.jpg";
 
 //imagens
 const Experiencias = () => {
-  const [imagensObras, setImagensObras] = useState([
+  const [imagensObras] = useState([
     {
       src: imageCarousel1,
       alt: "Imagem do canteiro de obras - COSTA",
