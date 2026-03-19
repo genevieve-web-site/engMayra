@@ -251,6 +251,16 @@ const Consultoria = () => {
         >
           Solicitar Orçamento <ArrowUpRight size={14} />
         </a>
+        <div className="mt-8">
+          <a
+            href="https://www.genevieve.com.br/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-gray-600 text-[10px] tracking-widest hover:text-gray-400 transition-colors"
+          >
+            Desenvolvido por Genevieve Website Constructions
+          </a>
+        </div>
       </footer>
     </main>
   );

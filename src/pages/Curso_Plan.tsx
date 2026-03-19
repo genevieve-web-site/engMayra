@@ -185,6 +185,16 @@ const Curso_Plan = () => {
           </div>
         </div>
       </section>
+      <footer className="w-full flex justify-center mt-8 mb-8">
+        <a
+          href="https://www.genevieve.com.br/"
+          target="_blank"
+          rel="noreferrer"
+          className="text-gray-600 text-[10px] tracking-widest hover:text-gray-400 transition-colors"
+        >
+          Desenvolvido por Genevieve Website Constructions
+        </a>
+      </footer>
     </main>
   );
 };
