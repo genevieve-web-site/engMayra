@@ -1,38 +1,36 @@
 import { useState } from "react";
 import { ArrowLeft, ArrowRight, Star } from "lucide-react";
 import { Link } from "react-router-dom";
-import imageProject1 from "../assets/mayra/Mayra_emObra.jpeg";
-import imageProject2 from "../assets/mayra/ConsultoriaMayra.jpeg";
-import imageProject3 from "../assets/mayra/consultoria.jpg";
-import imageProject4 from "../assets/mayra/Mayra_emObra.jpeg";
-import imageProject5 from "../assets/mayra/ConsultoriaMayra.jpeg";
-import imageProject6 from "../assets/mayra/consultoria.jpg";
+import imageProject1 from "../assets/consultoria/1.jpeg";
+import imageProject2 from "../assets/consultoria/2.jpeg";
+import imageProject3 from "../assets/consultoria/3.jpeg";
+import imageProject4 from "../assets/consultoria/4.jpeg";
+import imageProject5 from "../assets/consultoria/5.jpeg";
+import imageProject6 from "../assets/consultoria/6.jpeg";
 
+import imageCarousel1 from "../assets/consultoria/COSTA.jpeg";
+import imageCarousel2 from "../assets/consultoria/GRUPPO.jpeg";
+import imageCarousel3 from "../assets/mayra/Mayra_emObra.jpeg";
+import imageCarousel4 from "../assets/consultoria/atendimento.jpg";
+
+//imagens
 const Experiencias = () => {
   const [imagensObras, setImagensObras] = useState([
     {
-      src: imageProject1,
-      alt: "Obra 1",
+      src: imageCarousel1,
+      alt: "Imagem do canteiro de obras - COSTA",
     },
     {
-      src: imageProject2,
-      alt: "Obra 2",
+      src: imageCarousel2,
+      alt: "Imagem do canteiro de obras - GRUPPO",
     },
     {
-      src: imageProject3,
-      alt: "Obra 3",
+      src: imageCarousel3,
+      alt: "Profissional analisando plantas da obra",
     },
     {
-      src: imageProject4,
-      alt: "Obra 4",
-    },
-    {
-      src: imageProject5,
-      alt: "Obra 5",
-    },
-    {
-      src: imageProject6,
-      alt: "Obra 6",
+      src: imageCarousel4,
+      alt: "Profissional analisando plantas da obra",
     },
   ]);
 
@@ -43,28 +41,36 @@ const Experiencias = () => {
   // Substituí os textos por imagens de fundo para os cards
   const obrasCards = [
     {
-      obra: "Laje Residencial Alphaville",
+      obra: "HOME CLUB COSTA E SILVA",
       imagem: imageProject1,
+      describe:
+        "Planejamento de fase da etapa de estrutura em concreto protendido",
     },
     {
-      obra: "Fundação Empresarial Cathuo",
+      obra: "JACOB",
       imagem: imageProject2,
+      describe: "Planejamento de fase das fundações profundas.",
     },
     {
-      obra: "Condomínio Vertical Aurora",
+      obra: "JARDIM DO GRANT",
       imagem: imageProject3,
+      describe: "Planejamento de fase laje tipo em concreto protendido.",
     },
     {
-      obra: "Complexo Residencial Vale Verde",
+      obra: "BRASIL.70",
       imagem: imageProject4,
+      describe: "Planejamento de médio prazo torre em alvenaria estrutural.",
     },
     {
-      obra: "Ampliação Industrial Nova Era",
+      obra: "VIVA COSTA E SILVA",
       imagem: imageProject5,
+      describe:
+        "Replanejamento para entrega final de obra. 2 torres em alvenaria estrutural. ",
     },
     {
-      obra: "Edifício Prime Center",
+      obra: "INSIDE",
       imagem: imageProject6,
+      describe: "Planejamento de médio prazo. Torre em concreto armado ",
     },
   ];
 
@@ -74,29 +80,29 @@ const Experiencias = () => {
       <div className="p-6">
         <Link
           to="/"
-          className="flex items-center gap-2 text-gray-400 hover:text-black transition-colors uppercase text-xs font-bold tracking-widest"
+          className="flex items-center gap-2 text-gray-500 hover:text-black transition-colors uppercase text-xs font-bold tracking-widest"
         >
           <ArrowLeft size={16} /> Voltar
         </Link>
       </div>
 
       {/* Seção Escura (Estilo SPE) */}
-      <section className="w-full bg-[#030006] rounded-tl-[80px] rounded-br-[80px] py-20 px-6 md:px-12">
+      <section className="w-full bg-[#0a0212] rounded-tl-[80px] rounded-br-[80px] py-20 px-6 md:px-12">
         <div className="max-w-[1100px] mx-auto text-center">
           <header className="mb-16 space-y-4">
             <h2 className="text-pink-500 font-bold uppercase tracking-[0.3em] text-sm">
               Experiências
             </h2>
             <h1 className="text-2xl md:text-6xl font-bold text-white leading-tight uppercase tracking-tighter">
-              Projetos: <br />
+              EXPERIÊNCIA EM CAMPO: <br />
               <span className=" text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-400">
-                Confira minhas obras
+                O PLANEJAMENTO NA PRÁTICA
               </span>
             </h1>
             <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-              O método de planejamento visual funciona para qualquer engenheiro
-              que aplica a metodologia e os resultados das minhas obras provam
-              isso.
+              O planejamento só tem valor quando funciona na prática. Essas
+              obras mostram como método, controle e execução bem estruturada
+              geram resultado real no canteiro.
             </p>
 
             {/* Linha de Brilho Neon */}
@@ -137,35 +143,38 @@ const Experiencias = () => {
             </div>
           </header>
 
-          {/* Grid de Projetos (Cards com Imagem de Fundo) */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-24">
+          {/* Lista de Projetos (Card visual + card de texto à direita) */}
+          <div className="flex flex-col gap-6 mb-24">
             {obrasCards.map((item, index) => (
               <div
                 key={index}
-                className="relative h-[220px] border border-[#2d1b4d] rounded-tr-[30px] rounded-bl-[30px] flex flex-col justify-end p-6 text-left hover:border-pink-500/40 transition-all hover:-translate-y-2 group overflow-hidden shadow-lg"
+                className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-4 items-stretch"
               >
-                {/* IMAGEM DE FUNDO */}
-                <img
-                  src={item.imagem}
-                  alt={item.obra}
-                  className="absolute inset-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-transform duration-700"
-                />
+                <div className="relative h-[220px] border border-[#2d1b4d] rounded-tr-[30px] rounded-bl-[30px] overflow-hidden shadow-lg group">
+                  <img
+                    src={item.imagem}
+                    alt={item.obra}
+                    className="absolute inset-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#030006]/70 via-[#030006]/30 to-transparent z-10"></div>
+                </div>
 
-                {/* CAMADA ESCURA (OVERLAY) */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#030006]/95 via-[#030006]/50 to-transparent z-10"></div>
-
-                {/* CONTEÚDO (Estrelas + Nome) */}
-                <div className="relative z-20 flex items-center gap-3">
-                  <div className="flex text-orange-400 shrink-0 drop-shadow-md">
-                    <Star size={12} fill="currentColor" />
-                    <Star size={12} fill="currentColor" />
-                    <Star size={12} fill="currentColor" />
-                    <Star size={12} fill="currentColor" />
-                    <Star size={12} fill="currentColor" />
+                <div className="h-[220px] bg-white/90 text-black border border-black/10 rounded-tr-[30px] rounded-bl-[30px] p-6 text-left flex flex-col justify-center shadow-lg">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="flex text-orange-500 shrink-0">
+                      <Star size={12} fill="currentColor" />
+                      <Star size={12} fill="currentColor" />
+                      <Star size={12} fill="currentColor" />
+                      <Star size={12} fill="currentColor" />
+                      <Star size={12} fill="currentColor" />
+                    </div>
                   </div>
-                  <span className="text-white font-bold text-sm uppercase tracking-tight drop-shadow-md truncate">
+                  <span className="text-black font-bold text-sm md:text-base tracking-tight leading-snug">
                     {item.obra}
                   </span>
+                  <p className="mt-2 text-gray-700 text-xs md:text-sm leading-relaxed">
+                    {item.describe}
+                  </p>
                 </div>
               </div>
             ))}
@@ -173,17 +182,20 @@ const Experiencias = () => {
 
           {/* CTA Final (O "Para qual bolso o dinheiro está indo?") */}
           <div className="max-w-3xl mx-auto bg-gradient-to-b from-[#1a0d2b] to-transparent p-12 rounded-[40px] border border-white/5">
-            <h3 className="text-white text-2xl md:text-4xl font-bold mb-8 uppercase tracking-tighter leading-tight">
-              Toda obra precisa de bons <br />
-              planejamentos <br />
-              <span className="text-pink-500 ">Angede uma consultoria</span>
+            <h3 className="text-white text-2xl md:text-3xl font-bold mb-8 uppercase tracking-tighter leading-tight">
+              Toda obra precisa de planejamento <br />
+              bem feito. <br />
+              <span className="text-pink-500 ">
+                Agora é hora de estruturar o seu.
+              </span>
             </h3>
 
             <a
               href="https://wa.me/SEUNUMERO"
-              className="inline-block bg-gradient-to-r from-pink-600 to-orange-500 text-white font-bold py-5 px-10 rounded-full text-lg uppercase tracking-widest hover:scale-105 transition-transform shadow-[0_0_30px_rgba(236,72,153,0.3)]"
+              className="inline-block bg-gradient-to-r from-pink-600 to-orange-500 text-white font-bold py-5 px-6 rounded-full text-lg uppercase tracking-widest hover:scale-105 transition-transform shadow-[0_0_30px_rgba(236,72,153,0.3)]"
             >
-              Quero Agendar
+              QUERO ESTRUTURAR <br />
+              MEU PLANEJAMENTO
             </a>
           </div>
         </div>

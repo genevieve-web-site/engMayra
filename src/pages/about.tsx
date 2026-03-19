@@ -1,6 +1,7 @@
-import perfilImg from "../assets/mayra/ConsultoriaMayra.jpeg";
+import perfilImg from "../assets/mayra/sobre.jpg";
 import logoContech from "../assets/logoecontech-removebg-preview.png";
 import logoPrevision from "../assets/new-prevision-logo.svg";
+import logoEfficon from "../assets/efficon.png";
 import bgParcerias from "../assets/cursoDepo/bgParcerias.jpg";
 import {
   ArrowLeft,
@@ -25,25 +26,25 @@ const formacoes = [
   {
     id: 1,
     title: "Engenharia Civil",
-    subtitle: "Nome da Faculdade",
+    subtitle: "Faculdade Católica SC",
     icon: Building2,
   },
   {
     id: 2,
-    title: "Pós-Graduação",
-    subtitle: "Instituição Y",
+    title: "Pós graduação Gestão de negócios imobiliários",
+    subtitle: "Faculdade IDD Curitiba",
     icon: GraduationCap,
   },
   {
     id: 3,
-    title: "Planejamento",
-    subtitle: "Treinamento Sergio Kemmer",
+    title: "Planejamento Lean",
+    subtitle: " SK Consultoria e Treinamento",
     icon: BookOpen,
   },
   {
     id: 4,
-    title: "Método Visual",
-    subtitle: "Gestão de Obras",
+    title: "Gestão Visual",
+    subtitle: "Contech",
     icon: Presentation,
   },
 ];
@@ -69,7 +70,7 @@ const ServiceCard = ({ number, title, description, index }: ServiceProps) => {
 
       <div>
         <span className="text-3xl font-mono opacity-50 italic">#{number}</span>
-        <h3 className="text-xl font-bold mt-4 mb-4 uppercase tracking-tight">
+        <h3 className="text-base md:text-sm font-bold mt-4 mb-4  tracking-tight">
           {title}
         </h3>
       </div>
@@ -97,7 +98,7 @@ const AboutSection = () => {
       </div>
 
       {/* SEÇÃO 1: SOBRE A ENGENHEIRA (Agora com o fundo escuro arredondado) */}
-      <section className="bg-[#030006] rounded-tl-[80px] rounded-br-[80px] pt-16 pb-24 px-6 md:px-12 lg:px-24">
+      <section className=" bg-[#0a0212] rounded-tl-[80px] rounded-br-[80px] pt-16 pb-24 px-6 md:px-12 lg:px-24">
         <header className="md:hidden mb-8">
           <h2 className="text-pink-500 font-bold uppercase tracking-[0.3em] text-sm mb-2">
             Sobre a Especialista
@@ -116,7 +117,7 @@ const AboutSection = () => {
               <img
                 src={perfilImg}
                 alt="Engenheira Mayra Alves Nunes"
-                className="w-full h-auto max-h-[400px] object-cover  transition-all duration-500"
+                className="w-full h-[520px] md:h-[640px] lg:h-[720px] object-cover transition-all duration-500"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-pink-500 to-orange-400 text-white p-6 rounded-xl shadow-[0_0_30px_rgba(236,72,153,0.3)]">
@@ -130,7 +131,7 @@ const AboutSection = () => {
           <div className="space-y-6">
             <header className="hidden md:block">
               <h2 className="text-pink-500 font-bold uppercase tracking-[0.3em] text-sm mb-2">
-                Sobre a Especialista
+                Sobre mim
               </h2>
               <h1 className="text-4xl md:text-5xl font-extrabold leading-tight text-white">
                 Do canteiro de obras para a{" "}
@@ -142,19 +143,21 @@ const AboutSection = () => {
 
             <div className="space-y-4 text-gray-300 leading-relaxed text-lg">
               <p>
-                Conheça{" "}
-                <strong className="text-white">Mayra Alves Nunes</strong>.
-                Engenheira Civil e pós-graduanda, com atuação direta na gestão
-                de empreendimentos há 7 anos.
+                Ao longo da minha experiência em campo, percebi que atrasos,
+                retrabalhos e improdutividade são consequência de um
+                planejamento que não conversa com a realidade da execução
               </p>
               <p>
-                Sócia da <strong className="text-white">MR Construções</strong>{" "}
-                e fundadora da{" "}
-                <strong className="text-white">MN Planejamento</strong>.
+                Foi a partir disso que passei a focar na engenharia do
+                planejamento aplicada à prática: métodos que saem do papel,
+                organizam a produção e trazem previsibilidade para a obra.
+              </p>
+              <p>
+                Hoje, ajudo engenheiros e empresas a estruturarem seus projetos
+                com mais controle, clareza e resultado.
               </p>
               <p className="border-l-4 border-pink-500 pl-4 italic bg-white/5 py-3 rounded-r-lg">
-                "Acredito que o bom planejamento e organização fazem toda a
-                diferença!"
+                Acredito que o bom planejamento faz toda a diferença'
               </p>
             </div>
           </div>
@@ -287,6 +290,38 @@ const AboutSection = () => {
                 Conheça a plataforma
               </a>
             </div>
+
+            {/* CARD 3: EFFICON */}
+            <div className="bg-white/80 border border-black/10 rounded-[32px] p-10 hover:border-orange-500/40 transition-all duration-300 group flex flex-col justify-between shadow-xl hover:-translate-y-2">
+              <div>
+                <span className="inline-block px-4 py-1 bg-red-800/10 text-red-800 text-[10px] font-bold uppercase tracking-widest rounded-full mb-4 border border-red-800/20">
+                  Parceiro Tecnológico
+                </span>
+                <h4 className="text-3xl font-bold text-black  tracking-tight">
+                  Efficon
+                </h4>
+                <img
+                  src={logoEfficon}
+                  alt="Efficon"
+                  className="w-38 h-38 object-contain mb-0"
+                />
+                <p className="text-gray-700 text-sm leading-relaxed mb-4">
+                  Com a Efficon, sua equipe registra inspeções, checklists e
+                  conformidades de forma prática e organizada, direto do
+                  canteiro. Todas as etapas ficam documentadas e acessíveis,
+                  facilitando o acompanhamento e a correção de desvios com
+                  agilidade.
+                </p>
+              </div>
+
+              <span className="flex items-center gap-3 text-black text-sm font-bold uppercase tracking-wider">
+                <ArrowUpRight
+                  size={28}
+                  className="text-red-400 group-hover:scale-110 group-hover:rotate-12 transition-transform"
+                />
+                Novo parceiro
+              </span>
+            </div>
           </div>
         </div>
       </section>
@@ -296,13 +331,11 @@ const AboutSection = () => {
         <div className="max-w-7xl mx-auto">
           <div className="mb-16 flex flex-col md:flex-row justify-between items-end gap-6">
             <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-tighter text-gray-900">
-              Notas de <br />{" "}
-              <span className="text-gray-400 italic font-light">
-                Estratégia.
-              </span>
+              Meus <br />{" "}
+              <span className="text-gray-400 italic font-light">VALORES</span>
             </h2>
             <p className="text-gray-500 max-w-sm text-sm border-l-2 border-pink-500 pl-4 font-mono italic">
-              // Planejamento e soluções coladas no canteiro.
+              // Planejamento são soluções coladas no canteiro.
             </p>
           </div>
 
@@ -310,26 +343,26 @@ const AboutSection = () => {
             <ServiceCard
               index={0}
               number="01"
-              title="Gestão de Fundações"
-              description="Expertise técnica para garantir que a base da obra seja inabalável."
+              title="#Clareza acima de complexidade"
+              description="Planejamento precisa ser entendido por quem executa."
             />
             <ServiceCard
               index={1}
               number="02"
-              title="Consultoria MN"
-              description="Onde a teoria da engenharia encontra a prática da produtividade."
+              title=" Método acima de improviso"
+              description="Resultado consistente vem de processo, não de esforço isolado."
             />
             <ServiceCard
               index={2}
               number="03"
-              title="Cronograma Visual"
-              description="Chega de atrasos. Planejamento que todos conseguem entender."
+              title="Realidade de obra em primeiro lugar"
+              description="Nada funciona se não for aplicável no campo."
             />
             <ServiceCard
               index={3}
               number="04"
-              title="Last Planner"
-              description="Otimização máxima: cada minuto no canteiro conta para o lucro."
+              title="Compromisso com prazo"
+              description="Planejamento existe para garantir previsibilidade e entrega."
             />
           </div>
 
@@ -339,7 +372,9 @@ const AboutSection = () => {
             </h3>
             <p className="text-gray-600 text-base">
               E-mail:{" "}
-              <span className="font-semibold text-gray-900">email@email</span>
+              <span className="font-semibold text-gray-900">
+                mnengenharia25@gmail.com
+              </span>
             </p>
             <p className="text-gray-600 text-base">
               WhatsApp:{" "}
