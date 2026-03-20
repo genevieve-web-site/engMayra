@@ -244,7 +244,7 @@ const Consultoria = () => {
 
       <footer className="py-12 text-center bg-white">
         <a
-          href="https://wa.me/35997382410"
+          href="https://wa.me/5547996212925"
           target="_blank"
           rel="noreferrer"
           className="inline-flex items-center gap-3 bg-black text-white px-8 py-4 rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-pink-600 transition-all shadow-lg"

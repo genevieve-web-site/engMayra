@@ -219,7 +219,7 @@ const Experiencias = () => {
               </span>
             </h3>
             <a
-              href="https://wa.me/554796212925"
+              href="https://wa.me/5547996212925"
               className="inline-block bg-gradient-to-r from-pink-600 to-orange-500 text-white font-bold py-5 px-10 rounded-full text-sm md:text-lg uppercase tracking-widest hover:scale-105 transition-transform shadow-[0_0_40px_rgba(236,72,153,0.4)]"
             >
               Falar com a Mayra agora
@@ -227,17 +227,17 @@ const Experiencias = () => {
           </div>
         </div>
       </section>
-    <footer className="w-full flex justify-center mt-8 mb-8">
-      <a
-        href="https://www.genevieve.com.br/"
-        target="_blank"
-        rel="noreferrer"
-        className="text-gray-600 text-[10px] tracking-widest hover:text-gray-400 transition-colors"
-      >
-        Desenvolvido por Genevieve Website Constructions
-      </a>
-    </footer>
-  </main>
+      <footer className="w-full flex justify-center mt-8 mb-8">
+        <a
+          href="https://www.genevieve.com.br/"
+          target="_blank"
+          rel="noreferrer"
+          className="text-gray-600 text-[10px] tracking-widest hover:text-gray-400 transition-colors"
+        >
+          Desenvolvido por Genevieve Website Constructions
+        </a>
+      </footer>
+    </main>
   );
 };
 

@@ -128,7 +128,7 @@ const LinkTree = () => {
           <Linkedin size={20} />
         </a>
         <a
-          href="https://wa.me/554796212925"
+          href="https://wa.me/5547996212925"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-green-500 transition-colors"

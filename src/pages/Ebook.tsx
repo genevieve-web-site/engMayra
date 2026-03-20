@@ -1,6 +1,10 @@
 import { ArrowLeft, BookOpen, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import capaHelice from "../assets/cursoDepo/helice.jpeg";
+import capaHelice1 from "../assets/cursoHelice/1.jpeg";
+import capaHelice2 from "../assets/cursoHelice/2.jpeg";
+import capaHelice3 from "../assets/cursoHelice/3.jpeg";
+import capaHelice4 from "../assets/cursoHelice/4.jpeg";
+import capaHelice5 from "../assets/cursoHelice/6.jpeg";
 
 const Ebook_Plan = () => {
   // Dados do Curso Hélice
@@ -8,13 +12,13 @@ const Ebook_Plan = () => {
     {
       numero: "01",
       titulo: "PRÉ OBRA",
-      imagem: capaHelice,
+      imagem: capaHelice1,
       aulas: ["1.1 Laudo de vizinhança", "1.2 Contratações", "1.3 Projetos"],
     },
     {
       numero: "02",
       titulo: "O CANTEIRO",
-      imagem: capaHelice,
+      imagem: capaHelice2,
       aulas: [
         "2.1 O solo",
         "2.2 Gabarito",
@@ -25,7 +29,7 @@ const Ebook_Plan = () => {
     {
       numero: "03",
       titulo: "O PLANEJAMENTO",
-      imagem: capaHelice,
+      imagem: capaHelice3,
       aulas: [
         "3.1 Preparação das armaduras das estacas",
         "3.2 Cotas de arrasamento",
@@ -35,13 +39,13 @@ const Ebook_Plan = () => {
     {
       numero: "04",
       titulo: "A EXECUÇÃO",
-      imagem: capaHelice,
+      imagem: capaHelice4,
       aulas: ["4.1 Recebimento da hélice", "4.2 Processo de furação"],
     },
     {
       numero: "BÔNUS",
       titulo: "MATERIAIS EXCLUSIVOS",
-      imagem: capaHelice,
+      imagem: capaHelice5,
       aulas: [
         "Checklist completo de conferência",
         "Modelos de documentos",
@@ -80,7 +84,7 @@ const Ebook_Plan = () => {
             {modulosEbook.map((modulo, index) => (
               <div
                 key={index}
-                className="group flex flex-col md:flex-row bg-[#1a0d2b] border border-[#2d1b4d] rounded-tl-[30px] rounded-br-[30px] overflow-hidden w-full transition-all duration-300 hover:border-pink-500/30 shadow-lg"
+                className="group flex flex-col md:flex-row bg-[#1a0d2b] border border-[#2d1b4d] rounded-tl-[30px] rounded-br-[30px] overflow-hidden w-full min-h-[350px] md:min-h-[250px] transition-all duration-300 hover:border-pink-500/30 shadow-lg"
               >
                 {/* LADO ESQUERDO: Capa compacta */}
                 <div className="w-full md:w-[28%] relative h-48 md:h-auto overflow-hidden">

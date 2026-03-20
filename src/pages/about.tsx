@@ -312,15 +312,20 @@ const AboutSection = () => {
                   facilitando o acompanhamento e a correção de desvios com
                   agilidade.
                 </p>
+                {/* Link para o site EfficonGest */}
+                <a
+                  href="https://efficongest.com.br/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-3 text-black text-sm font-bold uppercase tracking-wider hover:text-red-800 transition-colors mt-2"
+                >
+                  <ArrowUpRight
+                    size={28}
+                    className="text-red-800 group-hover:scale-110 group-hover:rotate-12 transition-transform"
+                  />
+                  Conheça a EfficonGest
+                </a>
               </div>
-
-              <span className="flex items-center gap-3 text-black text-sm font-bold uppercase tracking-wider">
-                <ArrowUpRight
-                  size={28}
-                  className="text-red-400 group-hover:scale-110 group-hover:rotate-12 transition-transform"
-                />
-                Novo parceiro
-              </span>
             </div>
           </div>
         </div>
@@ -379,7 +384,7 @@ const AboutSection = () => {
             <p className="text-gray-600 text-base">
               WhatsApp:{" "}
               <a
-                href="https://wa.me/554796212925"
+                href="https://wa.me/5547996212925"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-semibold text-gray-900 hover:text-green-600 transition-colors"

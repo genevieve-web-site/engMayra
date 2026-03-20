@@ -1,5 +1,5 @@
-import imageCourse1 from "../assets/cursoDepo/10-01.jpg";
-import imageCourse2 from "../assets/cursoDepo/woman-working-as-engineer.jpg";
+import imageCourse1 from "../assets/cursoDepo/capa_cursos.jpeg";
+import imageCourse2 from "../assets/cursoDepo/helice.jpeg";
 
 import depoimento1 from "../assets/depoimentos/4.jpeg";
 import depoimento2 from "../assets/depoimentos/8.jpeg";
@@ -34,7 +34,7 @@ const Cursos = () => {
     {
       title: "E-book: Hélice na prática",
       description:
-        "O guia definitivo para engenheiros que desejam organizar seu primeiro canteiro com excelência.",
+        "O guia definitivo para engenheiros que desejam organizar seu primeiro estaqueamento com excelência.",
       image: imageCourse2,
       detailsLink: "/ebook",
       type: "Material Digital",
